@@ -1,17 +1,13 @@
+import java.util.Arrays;
+
 public class Game {
 
     public static void playGame(){
         System.out.println("-------Welcome to Hangman!---------");
-        String word = "Airplane";
+        String word = "airplane";
         char[] stars = new char[word.length()];
-        for (int i = 0; i <word.length() ; i++) {
-            System.out.println("*");
-
-        }
-        System.out.println("The word is " + word);
-
+        System.out.print("The word is: ");
+        Arrays.fill(stars, '*');
+        System.out.println(String.valueOf(stars));
     }
-
-
-
 }
