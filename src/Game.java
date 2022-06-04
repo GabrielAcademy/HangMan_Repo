@@ -13,7 +13,6 @@ public class Game {
         System.out.println(String.valueOf(stars));
         Scanner sc = new Scanner(System.in);
         System.out.print("Insert a letter: ");
-        String text = sc.next();
-        String letter = text;
+       char letter = sc.next().charAt(0);
     }
 }
