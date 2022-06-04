@@ -1,4 +1,6 @@
+import java.awt.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Game {
 
@@ -9,5 +11,8 @@ public class Game {
         System.out.print("The word is: ");
         Arrays.fill(stars, '*');
         System.out.println(String.valueOf(stars));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Insert a letter: ");
+       char letter = sc.next().charAt(0);
     }
 }
