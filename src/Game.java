@@ -31,6 +31,9 @@ public class Game {
             else {
                 System.out.println("You're wrong!");
             }
+            if (!String.valueOf(stars).contains("*")) {
+                break;
+            }
         }
     }
 }
