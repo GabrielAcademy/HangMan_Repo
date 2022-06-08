@@ -14,7 +14,7 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         System.out.print("Insert a letter: ");
         char letter = sc.next().charAt(0);
-        for (int i = 0; i <word.length() ; i++) {
+        for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == letter){
                 stars[i]=letter;
             }
