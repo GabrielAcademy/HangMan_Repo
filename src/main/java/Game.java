@@ -1,3 +1,5 @@
+import com.github.javafaker.Faker;
+
 import java.awt.*;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,7 +8,9 @@ public class Game {
 
     public static void playGame(){
         System.out.println("-------Welcome to Hangman!---------");
-        String word = "airplane";
+        Faker faker = new Faker();
+        String word = faker.artist().name();
+
         char[] stars = new char[word.length()];
         System.out.print("The word is: ");
         Arrays.fill(stars, '*');
